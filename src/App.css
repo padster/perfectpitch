@@ -31,9 +31,24 @@ html, body, #root {
   flex-grow: 1;
 }
 
+/* TODO - split into own CSS files per component? */
 .lessonList {
   width: 250px;
   border: 3px solid blue;
+  display: block;
+}
+
+.lessonList .listHolder {
+  background-color: whitesmoke;
+  line-height: 2em;
+}
+.lessonList .listItem {
+  flex-grow: 1;
+  cursor: pointer;
+  padding-left: 20px;
+}
+.lessonList .listItem:hover {
+  background-color: grey;
 }
 
 .activeLesson {

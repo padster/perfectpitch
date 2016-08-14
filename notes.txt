@@ -16,3 +16,9 @@ $ sudo npm install -g create-react-app
 https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
 $ git init
 ...etc
+
+-) Initial page framework, split into header + list + active section.
+
+-) Hook up redux:
+http://redux.js.org/index.html
+$ npm install --save redux
