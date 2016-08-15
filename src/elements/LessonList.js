@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
 import Store from '../Store.js';
+import BasicLesson from '../lessons/BasicLesson.js';
 
 // TODO - migrate somewhere better.
 const LESSONS = [{
   name: 'trial',
-  config: {
+  state: new BasicLesson({
     notes: 2,
-  },
+  }),
 }];
 
 class LessonList extends Component {
@@ -32,6 +33,7 @@ class LessonList extends Component {
     Store.dispatch({
       type: 'SET_ACTIVE_LESSON', lesson,
     });
+    lesson.state.start();
   }
 }
 

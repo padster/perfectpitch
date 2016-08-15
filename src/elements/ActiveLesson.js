@@ -31,7 +31,7 @@ class ActiveLesson extends Component {
   renderLesson(lesson) {
     return (
       <div>
-        Lesson: {lesson.name}
+        {lesson.state.render()}
       </div>
     );
   }
