@@ -1,11 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>React App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Pitch Trainer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Perfect Pitch</h1>
+        <p class="subtitle">Train your ear to recognize musical notes</p>
+
+        <div class="note-display">
+            <div class="emoji" id="noteEmoji">🎵</div>
+            <div class="note-name" id="noteName">Click play to start</div>
+        </div>
+
+        <button id="playButton" class="play-button">▶ Play</button>
+
+        <div class="tempo-control">
+            <label for="tempoSlider">Tempo:</label>
+            <input type="range" id="tempoSlider" min="100" max="2000" value="1000" step="100">
+            <span id="tempoValue">1.5s</span>
+        </div>
+
+        <div class="tempo-control">
+            <label for="noteCountSlider">Notes:</label>
+            <input type="range" id="noteCountSlider" min="1" max="12" value="12" step="1">
+            <span id="noteCountValue">12</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
 </html>
